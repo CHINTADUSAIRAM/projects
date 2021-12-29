@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter the angles of a triangle (in degrees):\n");
+	printf("a=");
+	scanf("%d",&a);
+	printf("b=");
+    scanf("%d",&b);
+	printf("c=");
+	scanf("%d",&c);
+	
+	if(a+b+c!=180)
+	printf("Invalid Analysis\n");
+	else if(a==b&&b==c)
+	printf("Equilaterel triangle\n");
+	else if(a==b||b==c||c==a)
+	printf("Isoselen\n");
+	else
+	printf("Scalene\n");
+	return 0;	
+}
