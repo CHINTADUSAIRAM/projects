@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main (void)
+{
+	int v1=10, *p1=&v1;
+	printf("The value stored in v1 is =%d\n",v1);
+	printf("The address of v1 is =%p\n",p1);
+	*p1=25;
+	printf("the new value of v1 is = %d\n ",v1);
+	int **p2=&p1; **p2=35;
+	printf("The next value of v1 is = %d\n",**p2);
+	return 0; 
+}
+
+
+
